@@ -1,4 +1,11 @@
-ToDo
-gallery section in travel.html
-gallery is not in the same row as the text
-but does it even have to?
+Prettier:
+"strg+P", >format Document
+
+ToDo (also check Evernote)
+-Add Content!!
+-Change Color? (don't forget highlight color)
+-Contact Button / ENTIRE Contact Page
+-Mentors Page
+-CleanUp Css?
+
+

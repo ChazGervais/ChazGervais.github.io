@@ -138,6 +138,53 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 /*-----------------------------------
     2. Form css 
 -----------------------------------*/
+
+.MentorContainer {
+    position: relative;
+    width: 50%;
+    display: block; /*when only inline, the overlyText is too short*/
+  }
+  
+  .MentorImage {
+    width: 25em;
+    height: auto;
+
+  }  
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 25em;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .MentorContainer:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlayText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+/*-----------------------------------
+    2. Form css 
+-----------------------------------*/
 label { }
 .control-label { color: #474747; font-weight: 700; font-size: 12px; text-transform: uppercase; }
 .form-control { width: 100%; height: 50px; padding: 6px 12px; 
@@ -302,22 +349,6 @@ label { }
 .bullet { position: relative; padding-left: 15px; color: #78807e; line-height: 32px; }
 .bullet-double-right li:before { font-family: FontAwesome; display: block; position: absolute; left: 0; width: 13px; font-size: 14px; color: #78807e; content: "\f101"; }
 
-/*--------------------------------
-4.7 Call to actions 
-----------------------------------*/
-
-/*--------------------------------
-4.8 Image Hover Effect 
-----------------------------------
-.imghover { display: block; position: relative; max-width: 100%; }
-.imghover::before, .imghover::after { display: block; position: absolute; content: ""; text-align: center; opacity: 0; }
-.imghover::before { top: 0; right: 0; bottom: 0; left: 0; }
-.imghover::after { top: 50%; left: 50%; width: 50px; height: 50px; line-height: 50px; margin: -25px 0 0 -25px; content: "\f2a8"; font-family: "FontAwesome"; font-size: 36px; }
-.imghover:hover::before, .imghover:hover::after { opacity: 1; }
-.imghover:hover::before { background: rgba(212, 27, 44, .55); }
-.imghover:hover::after { color: #FFFFFF; }
-[class^='imghvr-'], [class*=' imghvr-'] { background: rgba(211, 0, 80, .55); }
-*/
 
 /*--------------------
     5.1 Header Regular 
@@ -467,6 +498,7 @@ projects {
 8. Footer 
 -------------------------------------*/
 .footer { background-color: #1e1c18; padding-top: 60px; padding-bottom: 60px; }
+.footer-text {color: #fff; text-align: center;}
 .footer-block{background-color: #282725;padding: 40px 40px 10px 40px; border-radius: 10px;}
 .footer-widget p { color: #747474; }
 .footer-widget .widget-title { color: #fff; font-weight: 600; padding-bottom: 20px; margin-bottom: 30px; }
