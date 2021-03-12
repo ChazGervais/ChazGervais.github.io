@@ -141,28 +141,36 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 .MentorContainer {
     position: relative;
-    width: 50%;
-    display: block; /*when only inline, the overlyText is too short*/
+    width: 40%;
+    float: left;
+    background: #aa9144;
+    margin-right: 10%;
   }
   
   .MentorImage {
-    width: 25em;
+    opacity: 1;
+    display: block;
+    width: 100%;
     height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 
   }  
 
   .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 25em;
-    opacity: 0;
     transition: .5s ease;
-    background-color: #aa9144;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
   }
+
+  .MentorContainer:hover .MentorImage {
+    opacity: 0; /*MentorImage is covered by MentorContainer*/
+}
   
   .MentorContainer:hover .overlay {
     opacity: 1;
@@ -170,14 +178,8 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
   
   .overlayText {
     color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    font-size: 16px;
+    padding: 16px 32px; 
   }
 
 
@@ -362,13 +364,13 @@ label { }
     5.2 Navigations Regular
    ----------------------------*/
 .about-section { 
-    padding-top: 135px; 
-    padding-bottom: 135px; 
+    padding-top: 60px; 
+    padding-bottom: 85px; 
 }
 
 .content-section { 
-    padding-top: 100px; 
-    padding-bottom: 135px; 
+    padding-top: 60px; 
+    padding-bottom: 85px; 
 }
 
 .navigation { float: right; }
@@ -497,7 +499,7 @@ projects {
 /*-----------------------------------
 8. Footer 
 -------------------------------------*/
-.footer { background-color: #1e1c18; padding-top: 60px; padding-bottom: 60px; }
+.footer { background-color: #1e1c18; padding-top: 30px; padding-bottom: 30px; }
 .footer-text {color: #fff; text-align: center;}
 .footer-block{background-color: #282725;padding: 40px 40px 10px 40px; border-radius: 10px;}
 .footer-widget p { color: #747474; }
