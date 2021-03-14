@@ -136,8 +136,13 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; margin: 0; padding: 0 4px 5px; }
 
 /*-----------------------------------
-    2. Form css 
+    2. Mine 
 -----------------------------------*/
+
+.contactContent {
+    margin-bottom: 9.5vh;
+}
+
 
 .MentorContainer {
     position: relative;
@@ -145,6 +150,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     float: left;
     background: #aa9144;
     margin-right: 10%;
+    margin-bottom: 50pt;
   }
   
   .MentorImage {
@@ -178,11 +184,92 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
   
   .overlayText {
     color: white;
-    font-size: 16px;
-    padding: 16px 32px; 
+    font-size: 16px; 
+    width: 50em;
   }
 
+  .mentorWebsite {
+      color: white;
+  }
 
+  /*-----------------------------------
+     Masonry Gallery 
+-----------------------------------*/
+  
+  .hello {
+    opacity: 1 !important;
+  }
+  .full {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    margin-top: 3%;
+  }
+  .full .content {
+    background-color: rgba(0,0,0,0.75) !important;
+    height: 100%;
+    width: 100%;
+    display: grid;
+  }
+  .full .content img {
+    height: 80vh;
+    left: 50%;
+    transform: translate3d(0, 0, 0);
+    animation: zoomin 1s ease;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+  .byebye {
+    opacity: 0;
+  }
+  .byebye:hover {
+    transform: scale(0.2) !important;
+  }
+  .gallery {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 8px;
+    margin: 5% 5%;
+  }
+  .gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #333;
+    transition: all 1.5s ease;
+  }
+  .gallery img:hover {
+    box-shadow: 0 0 32px #333;
+  }
+  .gallery .content {
+    padding: 4px;
+  }
+  .gallery .gallery-item {
+    transition: grid-row-start 300ms linear;
+    transition: transform 300ms ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .gallery .gallery-item:hover {
+    transform: scale(1.025);
+  }
+
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    }
+  }
+  @media (max-width: 400px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+  }
+  
 
 /*-----------------------------------
     2. Form css 
@@ -638,6 +725,13 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
     display: inline-block; 
     text-align: center; 
     margin-right: 10px;
+}
+
+.socialText{
+    display: inline;
+}
+.socialWiget {
+    margin-bottom: 5px;;
 }
 
 .social-circle a:hover { background-color: #8e7424; }
