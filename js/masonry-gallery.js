@@ -38,6 +38,7 @@ async function ready() {
             item.classList.toggle('full');        
         });
     });
+    
 };
 
 
