@@ -160,7 +160,6 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-
   }  
 
   .overlay {
@@ -240,11 +239,11 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     margin: auto;
   }
   .byebye {
-    /*opacity: 0;*/
+    display: none;
   }
-  .byebye:hover {
-   /* transform: scale(0.2) !important;*/
-  }
+  /*.byebye:hover {
+   transform: scale(0.2) !important;
+  }*/
   .gallery {
     display: grid;
     grid-column-gap: 8px;
