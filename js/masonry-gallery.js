@@ -18,10 +18,8 @@ async function ready() {
         });
     };
 
-    var counterDispl = 0;
-    var counterAll = 0;
+
     gallery.querySelectorAll('img').forEach(function (item) {
-        item.classList.add('byebye');
 
         if (item.complete) {           
             item.addEventListener('load', function () {                  
@@ -29,17 +27,13 @@ async function ready() {
                 var gap = getVal(gallery, 'grid-row-gap');
                 var gitem = item.parentElement.parentElement;
                 gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-                item.classList.remove('byebye');
-                counterDispl = counterDispl+1; 
-                console.log('Img displayed: ' + counterDispl + item.className);
-            } )
+
+            })
         } else {
             console.log(item);
-            counterAll = counterAll+1;
 
         };
-        var notDispl = counterAll-counterDispl;
-                console.log('Not displayed: ' + notDispl)
+
         
         /*if (item.complete) {
             console.log(item); 
