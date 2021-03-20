@@ -1,0 +1,9 @@
+COLORS
+GREEN #31941F (replac #aa9144 #987e2e #cda34d #b69042)
+BLACK #142511 (replace #18150d #2b2d2c #1e1c18)
+DARK GREEN #242723 (#8e7424 #282725 #393836 #2d281a )
+GREY #3c3c3c (replaces #333 )
+LIGHT GREY #f0f0f0 (replace #b4b1ac, 98989c, bab6ae)
+MIDDLE GREY #474747 (84837f 78807e 56575e 8c9292 5a5a5a)
+WHITE e6eee4 (replace #f4f1ec #f1f3f8 #e5e7ec #f1f2f4)
+BRIGHT GREEN b4f3a9 (replace #ffecb3 #eddba5)

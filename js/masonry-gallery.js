@@ -18,9 +18,9 @@ async function ready() {
         });
     };
 
-
+    var counterAll = 0;
     gallery.querySelectorAll('img').forEach(function (item) {
-
+        counterAll = counterAll +1;
         if (item.complete) {           
             item.addEventListener('load', function () {                  
                 var altura = getVal(gallery, 'grid-auto-rows');
@@ -31,10 +31,8 @@ async function ready() {
             })
         } else {
             console.log(item);
-
         };
-
-        
+       
         /*if (item.complete) {
             console.log(item); 
         }
@@ -49,6 +47,8 @@ async function ready() {
         };*/
 
     });
+
+    console.log(counterAll);
     window.addEventListener('resize', resizeAll);
     gallery.querySelectorAll('.gallery-item').forEach(function (item) {
         item.addEventListener('click', function () {        
