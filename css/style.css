@@ -143,7 +143,6 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     margin-bottom: 100px;
 }
 
-
 .MentorContainer {
     position: relative;
     width: 40%;
@@ -254,7 +253,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 }
 
 .full .IMGcontent {
-  background-color: rgba(0,0,0,0.75) !important;
+  background-color: rgba(0,0,0,0.9) !important;
   height: 100%;
   padding:50px;
   padding-top: 130px;
